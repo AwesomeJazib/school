@@ -374,6 +374,10 @@ $custom_width: calc(100% - 27.5rem);
         margin-top: 1rem;
     }
 
+    .search_btn{
+        background-image: none;
+        color: $d-pink;
+    }
     .nav_top-right {
         margin-top: .5rem;
     }

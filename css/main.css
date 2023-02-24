@@ -9144,6 +9144,10 @@ body {
   .intro_inner [class^=col-] {
     margin-top: 1rem;
   }
+  .search_btn {
+    background-image: none;
+    color: #FF4981;
+  }
   .nav_top-right {
     margin-top: 0.5rem;
   }
