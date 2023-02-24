@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Roboto:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8908,16 +8908,22 @@ ul {
 .btn_theme {
   display: inline-block;
   text-decoration: none;
-  padding: 0.6rem 1.5rem 0.5rem;
-  border-radius: 3rem;
-  border: 2px solid transparent;
-  text-transform: uppercase;
-  font-size: calc(0.6rem + 0.2vw);
+  padding: 0.7rem 1.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: calc(0.8rem + 0.2vw);
   transition: all ease-in-out 0.2s;
+  background-color: #FF4981;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.btn_theme:hover {
+  background-color: #ffffff;
+  border-color: #FF4981;
+  color: #FD6766;
 }
 
 .container {
-  max-width: 85rem;
+  max-width: 55rem;
 }
 
 body {
@@ -8926,6 +8932,10 @@ body {
 
 .sec_place-nerrow {
   padding: 1rem 0;
+}
+
+.sec_sp-n {
+  padding: 2rem 0;
 }
 
 .ul_style {
@@ -8964,16 +8974,24 @@ body {
 .sec_heading {
   text-align: center;
 }
-.sec_heading h2 {
+.sec_heading h1, .sec_heading h2 {
   display: inline-block;
-  font-size: calc(1rem + 1.5vw);
-  line-height: calc(1rem + 2vw);
-}
-.sec_heading h2 small {
-  font-size: 110%;
+  line-height: calc(1.3rem + 2vw);
+  font-weight: 700;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  color: #271344;
+  margin-bottom: 0.6rem;
+}
+.sec_heading h1 small, .sec_heading h2 small {
+  font-size: 80%;
+  font-family: "Butterfly Kids", sans-serif;
   display: block;
+  color: #FD6766;
+}
+.sec_heading p {
+  line-height: 1.5rem;
+  font-size: calc(0.6rem + 0.5vw);
+  color: #919191;
 }
 .sec_heading .sec_heading-img {
   position: relative;
@@ -8997,6 +9015,14 @@ body {
   transform: translate(100%, calc(0.4rem + 0.7vw));
 }
 
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+
 .nav_top {
   background-color: #271344;
 }
@@ -9009,7 +9035,7 @@ body {
   flex-wrap: wrap;
 }
 .nav_top-left i {
-  color: #fd7e14;
+  color: #FDC100;
   font-size: 110%;
   margin-right: 0.25rem;
 }
@@ -9050,6 +9076,70 @@ body {
   color: #ffffff;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  font-size: calc(0.9rem + 0.3vw);
+  padding: 0.5rem 0.8rem;
+  color: #271344;
+  font-weight: 400;
+}
+
+.navbar-nav .nav-item .active {
+  background-color: #FF4981;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.search_btn {
+  animation: borderAnimation 0.9s infinite linear;
+  text-decoration: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-image: url(../img/circle.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes borderAnimation {}
+
+.hero_sec .row {
+  max-width: 100%;
+}
+
+.hero_text-sec {
+  height: 80vh;
+  width: 100%;
+  padding-left: calc(100% - 27.5rem + 12px);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_text-sec .hero_text-inner {
+  padding: 0 12px;
+}
+.hero_text-sec .hero_text-inner .sec_heading {
+  text-align: left;
+}
+.hero_text-sec .hero_text-inner .btn_theme {
+  margin-top: 1.3rem;
+}
+
+.hero_sec-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/hero-img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 @media (max-width: 992px) {
   .intro_inner [class^=col-] {
     margin-top: 1rem;
@@ -9065,9 +9155,15 @@ body {
   .nav_top [class^=col-] {
     width: 100%;
   }
+  .nav_top-left {
+    justify-content: center;
+  }
 }
 @media (max-width: 576px) {
   .nav_top-left {
     display: none;
   }
+}
+.p-l-0 {
+  padding-left: 0 !important;
 }/*# sourceMappingURL=main.css.map */
