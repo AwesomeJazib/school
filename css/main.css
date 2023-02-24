@@ -4,8 +4,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Roboto:wght@100;400;700;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8893,14 +8893,6 @@ textarea.form-control-lg {
   background-color: #ffffff;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  overflow: hidden;
-  overflow-y: auto;
-}
-
 h1,
 h2,
 h3,
@@ -8924,65 +8916,53 @@ ul {
   transition: all ease-in-out 0.2s;
 }
 
-.btn_bdr-orange {
-  border-color: #E7702D;
-  color: #E7702D;
-}
-.btn_bdr-orange:hover {
-  color: #ffffff;
-}
-
-.btn_bdr-yellow {
-  border-color: #E7C774;
-  color: #E7C774;
-}
-.btn_bdr-yellow:hover {
-  color: #ffffff;
-}
-
-.btn_yellow-fill {
-  background-color: #E7C774;
-  color: #4E1F31;
-}
-.btn_yellow-fill:hover {
-  color: #E7702D;
-}
-
-.btn_orange-fill {
-  background-color: #E7C774;
-  color: #4E1F31;
-}
-.btn_orange-fill:hover {
-  color: #ffffff;
-}
-
-.btn_crimson-fill {
-  background-color: #4E1F31;
-  color: #ffffff;
-}
-.btn_crimson-fill:hover {
-  color: #ffffff;
-}
-
-.btn_bdr-crimson {
-  border-color: #4E1F31;
-  color: #4E1F31;
-}
-.btn_bdr-crimson:hover {
-  color: #4E1F31;
-}
-
 .container {
   max-width: 85rem;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.sec_place-nerrow {
+  padding: 1rem 0;
+}
+
+.ul_style {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.gap_normal {
+  gap: 0.5rem;
+}
+
+.nav_item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  font-size: calc(0.7rem + 0.5vw);
+}
+.nav_item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav_btn-white {
+  color: #ffffff;
+}
+.nav_btn-white:hover {
+  color: #ffffff;
+}
+
+.nav_btn-blue {
+  color: #271344;
 }
 
 .sec_heading {
   text-align: center;
-  color: #E7C774;
 }
 .sec_heading h2 {
   display: inline-block;
@@ -8990,9 +8970,8 @@ body {
   line-height: calc(1rem + 2vw);
 }
 .sec_heading h2 small {
-  color: #E7702D;
   font-size: 110%;
-  font-family: "Sacramento", "cursive", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   display: block;
 }
@@ -9013,17 +8992,82 @@ body {
   height: calc(2rem + 1vw);
   padding: 0 0.25rem;
 }
-.sec_heading .sec_heading-img:before {
-  left: 0;
-  transform: translate(-100%, calc(0.4rem + 0.7vw));
-}
 .sec_heading .sec_heading-img:after {
   right: 0;
   transform: translate(100%, calc(0.4rem + 0.7vw));
 }
 
+.nav_top {
+  background-color: #271344;
+}
+.nav_top .row {
+  align-items: center;
+}
+
+.nav_top-left {
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+.nav_top-left i {
+  color: #fd7e14;
+  font-size: 110%;
+  margin-right: 0.25rem;
+}
+.nav_top-left .nav_item {
+  font-size: calc(0.9rem + 0.2vw);
+}
+
+.nav_top-right {
+  margin-top: 0 !important;
+  justify-content: flex-end;
+}
+.nav_top-right li:nth-child(1) .nav_right-item {
+  background: #1AB9FD;
+}
+.nav_top-right li:nth-child(2) .nav_right-item {
+  background: #FF4981;
+}
+.nav_top-right li:nth-child(3) .nav_right-item {
+  background: #FDC100;
+}
+.nav_top-right li:nth-child(4) .nav_right-item {
+  background: #ACCC4F;
+}
+
+.nav_right-item {
+  width: calc(2rem + 1vw);
+  height: calc(2rem + 1vw);
+  border-radius: 50%;
+  text-decoration: none;
+  display: inline-block;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_right-item i {
+  font-size: calc(0.7rem + 0.5vw);
+  color: #ffffff;
+}
+
 @media (max-width: 992px) {
   .intro_inner [class^=col-] {
     margin-top: 1rem;
+  }
+  .nav_top-right {
+    margin-top: 0.5rem;
+  }
+  .jst_lg-center {
+    justify-content: center;
+  }
+}
+@media (max-width: 810px) {
+  .nav_top [class^=col-] {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .nav_top-left {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
