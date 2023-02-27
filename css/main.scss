@@ -145,6 +145,7 @@ body {
 
 .sec_heading {
     text-align: center;
+    position: relative;
     // color: $theme_yellow;
     
 
@@ -173,41 +174,37 @@ body {
         line-height: 1.5rem;
         font-size: calc(.6rem + .5vw);
         color: #919191;
+
+        padding-bottom: 5rem;
     }
-
-    .sec_heading-img{
-        position: relative;
-        width: fit-content;
-        margin: 0 auto;
-        
-
-        &:before,&:after{
-            content: '';
-            position: absolute;
-            width: calc(3rem + 2vw);
-            height: 1px;
-            background-color: green;
-            
-        }
 
     
-        img {
-            height: calc(2rem + 1vw);
-            // width: calc(3rem + 4vw);
-            padding: 0 .25rem;
 
+    .heading_img{
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        transform: translateX(-50%);
+        width: 5em;
+        animation: heading_anin 1.5s linear infinite;
+
+        @keyframes heading_anin {
+            0%{
+                transform: translateX(0);
+            }
+
+            // 25%{
+            //     transform: translateX(20%);
+            // }
+
+            50%{
+                transform: translateX(-20%);
+            }
+
+            100%{
+                transform: translateX(0);
+            }
         }
-
-    }
-
-    // .sec_heading-img:before{
-    //     left: 0;
-    //     transform: translate(-100%, calc(.4rem + .7vw));
-    // }
-
-    .sec_heading-img:after{
-        right: 0;
-        transform: translate(100%, calc(.4rem + .7vw));
     }
 
     
@@ -502,6 +499,111 @@ $custom_width: calc(100% - 35rem);
 
 
 
+// styling of our_envoirnment
+
+.card_a{
+    background-color: $color-crimson;
+}
+
+.card_b{
+    background-color: $color-orange;
+}
+
+.card_c{
+    background-color: $color-green;
+}
+
+.card_d{
+    background-color: $color-yellow;
+}
+
+.envoirnment_sec-card{
+    border-radius: .5rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
+    .envoirnment_card-img{
+        display: block;
+        
+        margin: 2em auto 1.5em;
+        position: relative;
+        width: 9em;
+        padding-top: 9em;
+        border-radius: 50%;
+        background-color: gainsboro;
+
+        &::after{
+            content: "";
+             position: absolute;
+             inset: -0.5rem;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: inherit;
+             border: #FF4981 3px dashed;
+             animation: rotateBorder 10s linear infinite;
+        }
+        
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+
+            border-radius: 50%;
+        }
+    }
+
+}
+
+.env_card-text{
+    color: $white;
+}
+
+.env_card-heading{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.env_card-para{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.enroll_sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enroll_sec-heading{
+    color: $d-blue;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    // width: 80%;
+    span{
+        color: $color-crimson;
+    }
+    small{
+        font-size: 65%;
+        display: block;
+        font-weight: normal;
+        margin-top: .5em;
+    }
+}
+
+
 
 
 
@@ -590,6 +692,13 @@ $custom_width: calc(100% - 35rem);
     .hero_sec{
         margin-top: 9rem;
     }
+    //styling of our_envoirnment section
+
+    .enroll_sec{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
 
 }
 
@@ -644,9 +753,13 @@ $custom_width: calc(100% - 35rem);
             .heading_para{
                 color: $black;
             }
-
+            
             .sec_heading{
+
                 
+                .heading_img{
+                    display: none;
+                }
             }
         }
     }
@@ -662,3 +775,6 @@ $custom_width: calc(100% - 35rem);
     padding-left: 0!important;
 }
 
+.hero_text .sec_heading p{
+    padding-bottom: 0;
+}
