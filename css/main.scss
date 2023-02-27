@@ -94,7 +94,7 @@ ul {
 }
 
 .container {
-    max-width: 70rem;
+    max-width: 90rem;
 }
 
 body {
@@ -389,7 +389,7 @@ body {
         right: 0;
         z-index: 2;
         width: 25em;
-        
+        opacity: .8;
         animation: img_a-anim 4s linear infinite;
 
         @keyframes img_a-anim {
@@ -444,7 +444,7 @@ body {
 }
 
 
-$custom_width: calc(100% - 35rem);
+$custom_width: calc(100% - 45rem);
 
 .hero_text-sec{
     // height: 80vh;
@@ -605,7 +605,12 @@ $custom_width: calc(100% - 35rem);
 
 
 
-
+@media(max-width: 1200px){
+    .hero_sec .hero_img-b{
+        
+        top: -3em;
+    }
+}
 
 
 
@@ -621,6 +626,10 @@ $custom_width: calc(100% - 35rem);
     }
     .intro_inner [class^="col-"] {
         margin-top: 1rem;
+    }
+
+    .hero_img-a{
+        opacity: .7;
     }
 
     
@@ -648,12 +657,11 @@ $custom_width: calc(100% - 35rem);
     }
     
     .hero_sec .hero_img-b{
-        top: 1rem;
+        top: .5rem;
         z-index: 2;
         left: auto;
-        right: 2rem;
-        // left: -4rem;
-        
+        right: 9.5em;
+        opacity: .7;
     }
 
     @keyframes img_b-anim {
