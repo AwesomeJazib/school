@@ -8933,12 +8933,26 @@ ul {
   color: #271344;
 }
 
+.contant_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .m-b-p2em {
   margin-bottom: 0.2em;
 }
 
 .m-b-p5em {
   margin-bottom: 0.5em;
+}
+
+.m-r-1em {
+  margin-right: 1em;
+}
+
+.m-l-1em {
+  margin-left: 1em;
 }
 
 .m-b-2em {
@@ -9516,8 +9530,71 @@ body {
   position: relative;
 }
 
+.act_bg {
+  position: absolute;
+  animation: anim_a 3s linear infinite;
+}
+
+.act-bg-a {
+  top: 1em;
+  left: 1rem;
+  width: 4em;
+}
+
+.act-bg-b {
+  top: 5em;
+  right: 1em;
+  width: 3em;
+}
+
+.act-bg-c {
+  bottom: 3em;
+  left: 1em;
+  width: 4em;
+}
+
+.avtivity_row {
+  flex-direction: column;
+}
+
 .cativity_card {
   text-align: right;
+}
+.cativity_card figcaption {
+  width: 80%;
+}
+.cativity_card picture {
+  width: 20%;
+}
+.cativity_card picture .search_icon {
+  width: 4em;
+  height: 4em;
+}
+.cativity_card picture i {
+  font-size: 3em;
+  color: #000000;
+}
+
+.act_row-right .cativity_card {
+  text-align: left;
+}
+
+.act_img-sec {
+  position: relative;
+  width: 100%;
+  padding-top: 15rem;
+  display: block;
+  border-radius: 0.5rem;
+  border: 1rem solid #eaeaea;
+}
+.act_img-sec img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
