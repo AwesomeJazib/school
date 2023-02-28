@@ -8938,6 +8938,10 @@ ul {
   margin-bottom: 0.5em;
 }
 
+.m-b-2em {
+  margin-bottom: 2em;
+}
+
 .m-t-1em {
   margin-top: 1em;
 }
@@ -9637,7 +9641,7 @@ body {
     left: 2em;
   }
   .vision_text-outer {
-    margin-top: 40vh;
+    margin-top: 25vh;
   }
 }
 .p-l-0 {
