@@ -26,6 +26,7 @@ $color-crimson: #FD6766;
 $color-green: #ACCC4F;
 $color-yellow: #FDC100;
 $d-pink: #FF4981;
+$color_l-gray: #878786;
 
 .site_wrapper{
     overflow-x: hidden;
@@ -85,6 +86,31 @@ ul {
 }
 
 //generic styling
+.heading_format{
+    text-transform: capitalize;
+}
+
+.m-b-p2em{
+    margin-bottom: .2em;
+}
+
+.m-b-p5em{
+    margin-bottom: .5em;
+}
+
+.m-t-1em{
+    margin-top: 1em;
+}
+
+.f-p8em{
+    font-size: .8em;
+}
+
+
+
+.c-l-g{
+    color: $color_l-gray;
+}
 
 .p_none{
     padding: 0;
@@ -604,6 +630,172 @@ $custom_width: calc(100% - 45rem);
 }
 
 
+//styling of our_vision
+
+.vision_row{
+    align-items: center;
+}
+
+.vision_img-sec{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.vision_img{
+    position: absolute;
+    width: 18em;
+    padding-top: 12em;
+    
+    
+    
+
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+         object-fit: cover;
+    }
+}
+
+.vision_img-a{
+    top: 10em;
+    left: 10em;
+    border: .7rem solid #eaeaea;
+    border-radius: .5rem;
+    transform: rotate(15deg);
+    animation: anim_a 4s linear infinite;
+}
+
+.vision_img-b{
+    top: 22em;
+    left: 13em;
+    border-radius: .5rem;
+    border: .7rem solid #eaeaea;
+    transform: rotate(-15deg);
+    animation: anim_b 4s linear infinite;
+}
+
+.vision_img-c{
+    position: absolute;
+    top: 15em;
+    left: 30em;
+    width: 4em;
+
+    animation: anim_c 4s linear infinite;
+
+}
+
+.vision_img-d{
+    position: absolute;
+    top: 15em;
+    left: 10em;
+    width: 6em;
+    animation: anim_c 4s linear infinite;
+
+}
+
+.vision_img-e{
+    position: absolute;
+    top: 3em;
+    left: 7em;
+    width: 5em;
+    animation: anim_c 4s linear infinite;
+
+}
+
+.vision_img-f{
+    position: absolute;
+    top: 30em;
+    left: 20em;
+    width: 4em;
+    animation: anim_c 4s linear infinite;
+
+}
+
+.vision_img-g{
+    position: absolute;
+    top:30em;
+    left: 31em;
+    width: 6em;
+    animation: anim_c 4s linear infinite;
+
+}
+
+
+
+    @keyframes anim_a {
+        0% {
+            transform: translateY(20%) rotate(5deg);
+
+        }
+
+        50% {
+            transform: translateY(30%) rotate(2deg);
+        }
+            
+        100% {
+                
+            transform: translateY(20%) rotate(5deg);
+                
+        }
+    }
+
+    @keyframes anim_b {
+        0% {
+            transform: translateY(20%) rotate(-15deg);
+
+        }
+
+        50% {
+            transform: translateY(30%) rotate(-12deg);
+        }
+            
+        100% {
+                
+            transform: translateY(20%) rotate(-15deg);
+                
+        }
+    }
+
+    @keyframes anim_c {
+        0% {
+            transform: translateY(120%) rotate(-15deg);
+
+        }
+
+        50% {
+            transform: translateY(80%) rotate(-12deg);
+        }
+            
+        100% {
+                
+            transform: translateY(120%) rotate(-15deg);
+                
+        }
+    }
+
+
+
+
+
+
+.vision_heading{
+    font-weight: 800;
+    color: $d-blue;
+    line-height: 1.2em;
+}
+
+.vision_card-heading{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: $d-blue;
+}
+
+
 
 @media(max-width: 1200px){
     .hero_sec .hero_img-b{
@@ -681,6 +873,11 @@ $custom_width: calc(100% - 45rem);
         }
     }
 
+    //styling of vision_text-outer
+
+    .vision_text-outer{
+        margin-top: 80vh;
+    }
     
 }
 
@@ -706,6 +903,12 @@ $custom_width: calc(100% - 45rem);
         flex-direction: column;
         justify-content: center;
         gap: 1em;
+    }
+
+    //styling of vision 
+
+    .vision_text-outer{
+        margin-top: 60vh;
     }
 
 }
@@ -774,6 +977,18 @@ $custom_width: calc(100% - 45rem);
 
     .d_mb-none{
         display: none;
+    }
+
+    //styling of vision section
+    .vision_img-a{
+        top: -2rem;
+    }
+    .vision_img-a, .vision_img-b, .vision_img-c, .vision_img-g, .vision_img-e{
+        left: 2em;
+    }
+
+    .vision_text-outer{
+        margin-top: 40vh;
     }
 
     
