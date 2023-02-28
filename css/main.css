@@ -8928,6 +8928,9 @@ ul {
 
 .heading_format {
   text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #271344;
 }
 
 .m-b-p2em {
@@ -9383,6 +9386,10 @@ body {
   margin-top: 0.5em;
 }
 
+.our_vision {
+  background-color: #FCF9F4;
+}
+
 .vision_row {
   align-items: center;
 }
@@ -9505,10 +9512,12 @@ body {
   line-height: 1.2em;
 }
 
-.vision_card-heading {
-  font-size: 1.2em;
-  font-weight: 800;
-  color: #271344;
+.activities {
+  position: relative;
+}
+
+.cativity_card {
+  text-align: right;
 }
 
 @media (max-width: 1200px) {
