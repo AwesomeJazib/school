@@ -695,7 +695,7 @@ $custom_width: calc(100% - 45rem);
 
 .vision_img-a{
     top: 10em;
-    left: 10em;
+    left: 30%;
     border: .7rem solid #eaeaea;
     border-radius: .5rem;
     transform: rotate(15deg);
@@ -704,7 +704,7 @@ $custom_width: calc(100% - 45rem);
 
 .vision_img-b{
     top: 20em;
-    left: 13em;
+    left: 30%;
     border-radius: .5rem;
     border: .7rem solid #eaeaea;
     transform: rotate(-15deg);
@@ -949,7 +949,7 @@ $custom_width: calc(100% - 45rem);
 }
 
 .video_section{
-    height: 100%;
+    height: 24.1rem;
 }
 
 .video-container {
@@ -959,7 +959,7 @@ $custom_width: calc(100% - 45rem);
 	// box-shadow: 0px 8px 20px rgba(black, 0.4);
 }
 	
-	video {
+	iframe {
 
         width: 100%;
     height: 100%;
@@ -1009,6 +1009,8 @@ $custom_width: calc(100% - 45rem);
 }
 
 .video_section-row{
+    margin: 0;
+    height: 25%;
     h2{
         color: $white;
         font-weight: bold;
@@ -1023,6 +1025,22 @@ $custom_width: calc(100% - 45rem);
             text-transform: uppercase;
             
         }
+    }
+}
+
+.video_sec-heading{
+    display: flex;
+    align-items: center;
+    
+}
+
+.video_sec-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+        background-color: $white;
+        color: $d-blue;
     }
 }
 
@@ -1108,9 +1126,7 @@ $custom_width: calc(100% - 45rem);
 
     //styling of vision_text-outer
 
-    .vision_text-outer{
-        margin-top: 80vh;
-    }
+    
 
 
     //styling of our_programes
@@ -1147,9 +1163,7 @@ $custom_width: calc(100% - 45rem);
 
     //styling of vision 
 
-    .vision_text-outer{
-        margin-top: 60vh;
-    }
+    
 
 }
 
@@ -1254,9 +1268,7 @@ $custom_width: calc(100% - 45rem);
         top: 11em;
     }
 
-    .vision_text-outer{
-        margin-top: 25vh;
-    }
+    
 
     .cativity_card {
         flex-direction: column-reverse;
