@@ -2,6 +2,7 @@
 
 var slider1 = new Swiper ('.slider1', {
   effect: 'slide',
+  spaceBetween: 20,
   
   pagination: {
     el: '.swiper-pagination',
@@ -15,6 +16,25 @@ var slider1 = new Swiper ('.slider1', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  breakpoints: {
+
+    565: {
+      slidesPerView: 1,
+      
+    },
+
+    600: {
+      slidesPerView: 2,
+      
+    },
+            
+    786: {
+      slidesPerView: 3,
+      
+    },
+    
+}
 });
 
 

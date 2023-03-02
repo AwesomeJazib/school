@@ -9004,9 +9004,19 @@ ul {
 
 .custome_card .cust_card-img {
   display: block;
-  padding-top: 25%;
+  padding-top: 65%;
   width: 100%;
   background-color: green;
+  position: relative;
+}
+.custome_card .cust_card-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .custome_card .cust_card-text {
   padding: 1rem 0;
@@ -9776,15 +9786,53 @@ iframe {
   color: #271344;
 }
 
+.our_classes {
+  position: relative;
+}
+.our_classes .custome_card {
+  overflow: hidden;
+  border-radius: 0.7rem;
+  border: 1px solid #eaeaea;
+}
+.our_classes .cust_card-text {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+.our_classes .card_heading {
+  font-size: calc(0.7rem + 0.5vw);
+  font-weight: 800;
+  color: #271344;
+  margin-bottom: 1rem;
+}
+.our_classes .card_para {
+  font-size: calc(0.7rem + 0.3vw);
+}
 .our_classes .card_list-item {
   color: #FF4981;
-  font-size: 1em;
+  font-size: calc(0.3rem + 0.5vw);
   letter-spacing: 0.1em;
+  line-height: 0.5;
 }
 .our_classes .card_list-item small {
+  font-size: 120%;
   display: block;
   color: #271344;
   font-weight: 600;
+}
+.our_classes .swiper-wrapper {
+  padding: calc(2rem + 2vw) 0;
+}
+.our_classes .class_btn-prev {
+  top: 28rem;
+  left: calc(1rem + 0.5vw);
+}
+.our_classes .class_btn-next {
+  top: 28rem;
+  right: calc(1rem + 0.5vw);
+}
+
+body {
+  line-height: 1.5;
 }
 
 @media (max-width: 1200px) {
