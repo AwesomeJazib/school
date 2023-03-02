@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css">
   </head>
 
   <body>
@@ -462,7 +461,6 @@
 
         <section class="our_programes">
 
-
           <div class="row our_programes-row">
 
             <div class="col-lg-6">
@@ -475,76 +473,92 @@
                       Smartly programes
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                      elit. Quam temporibus .</p>
+                      elit. Quam temporibus .
+                    </p>
                     <img src="./img/bee.png" class="heading_img" alt="">
                   </div>
 
                   <div class="accordian_section">
 
-                    <div class="accordion accordion-flush"
-                      id="accordionFlushExample">
+                    <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed"
-                            type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
                             Accordion Item #1
                           </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse
-                          collapse" aria-labelledby="flush-headingOne"
-                          data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for
-                            this accordion, which is intended to demonstrate
-                            the <code>.accordion-flush</code> class. This is
-                            the first item's accordion body.</div>
+                        <div id="collapseOne" class="accordion-collapse collapse
+                          show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong>
+                            It is shown by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
                         </div>
                       </div>
+
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
+                        <h2 class="accordion-header" id="headingTwo">
                           <button class="accordion-button collapsed"
                             type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
+                            data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
                             Accordion Item #2
                           </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse
-                          collapse" aria-labelledby="flush-headingTwo"
-                          data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for
-                            this accordion, which is intended to demonstrate
-                            the <code>.accordion-flush</code> class. This is
-                            the second item's accordion body. Let's imagine
-                            this being filled with some actual content.</div>
+                        <div id="collapseTwo" class="accordion-collapse
+                          collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong>
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
                         </div>
                       </div>
+
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
+                        <h2 class="accordion-header" id="headingThree">
                           <button class="accordion-button collapsed"
                             type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
                             Accordion Item #3
                           </button>
                         </h2>
-                        <div id="flush-collapseThree"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="flush-headingThree"
-                          data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for
-                            this accordion, which is intended to demonstrate
-                            the <code>.accordion-flush</code> class. This is
-                            the third item's accordion body. Nothing more
-                            exciting happening here in terms of content, but
-                            just filling up the space to make it look, at
-                            least at first glance, a bit more representative
-                            of how this would look in a real-world
-                            application.</div>
+                        <div id="collapseThree" class="accordion-collapse
+                          collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong>
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -556,54 +570,215 @@
             </div>
 
             <div class="col-lg-6">
+
               <div class="video_section">
 
 
-                  <div class="video-container ratio ratio-16x9" id="video-container">
+                <div class="video-container" id="video-container">
 
-                    <iframe id="video" src="//www.youtube.com/embed/9B7te184ZpQ?rel=0" frameborder="0" allowfullscreen></iframe>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="modal_btn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <img src="./img/activity.jpg" class="modal_img" alt="">
+                    <img src="./img/play-btn.png" class="play-video_img" alt="">
+                  </button>
 
-                      <!-- <video controls id="video" preload="metadata"
-                      poster="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/poster.jpg">
-                      <source
-                        src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
-                        type="video/mp4">
-                    </video> -->
-                    <!-- </iframe> -->
-                    
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
 
-                    
+                    <div class="modal-dialog">
 
-                    <!-- <div class="play-button-wrapper">
-                      <div title="Play video" class="play-gif" id="circle-play-b">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
-                          <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26
-                            61.56V18.44L64 40z" />
-                        </svg>
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+
+                          <h5 class="modal-title" id="exampleModalLabel">Modal
+                            title</h5>
+
+                          <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close">
+                          </button>
+
+                        </div>
+
+                        <div class="modal-body">
+
+                          <div class="ratio ratio-16x9">
+
+                            <iframe
+                              src="https://www.youtube.com/embed/9B7te184ZpQ?rel=0"
+                              title="YouTube video" allowfullscreen></iframe>
+                          </div>
+
+                        </div>
+
                       </div>
-                    </div> -->
-                  </div>
 
-                  <div class="row video_section-row">
-                    <div class="col-md-8 video_sec-heading">
-                      <h2>
-                        <small>schedule a free consultation 24/7</small>
-
-                        <span>Hotline:</span>03155558180
-                      </h2>
                     </div>
 
-                    <div class="col-md-4 video_sec-btn">
-                      <a href="#" class="btn_theme">Free consulting</a>
-                    </div>
                   </div>
 
-              </div>
+                </div>
+
+                <div class="video_section-row">
+
+                  <h2>
+                    <small>schedule a free consultation 24/7</small>
+
+                    <span>Hotline:</span>03155558180
+                  </h2>
+
+
+
+                  <a href="#" class="btn_theme">Free consulting</a>
+
+                </div>
+
+              </div><!-- /.video_section -->
 
             </div><!-- /.row -->
+          </div>
+        </section><!-- /.our_programes -->
 
 
-          </section><!-- /.our_programes -->
+        <section class="our_classes sec_space">
+
+          <div class="container md">
+
+            <div class="sec_heading">
+              <h1>
+                <small>Planing in learning</small>
+                Our classes
+              </h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                temporibus .</p>
+              <img src="./img/bee-happy.png" class="heading_img" alt="">
+            </div>
+
+            <div class="swiper_sec-wrapper">
+
+              <div class="swiper swiper-container slider1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure class="custome_card">
+                        <picture class="cust_card-img">
+
+                        </picture>
+
+                        <figcaption class="cust_card-text">
+                          <h3 class="card_heading">
+                            Magic Number
+                          </h3>
+
+                          <p class="card_para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, iste. Esse natus sit enim porro voluptates reprehenderit neque incidunt dolorem.
+                          </p>
+
+                          <hr>
+
+                          <div class="card_list">
+                            <ul class="custom_list">
+                              <li>
+                                <a href="#" class="card_list-item">
+                                  <small>Age</small>
+                                  Age 1-2 years
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="card_list-item">
+                                  <small>Size</small>
+                                  10 Class
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="card_list-item">
+                                  <small>Prise</small>
+                                  3000PKR per month
+                                </a>
+                              </li>
+                              
+                            </ul>
+                          </div><!-- /.card_list -->
+                        </figcaption>
+
+                      </figure>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <figure class="custome_card">
+                        <picture class="cust_card-img">
+
+                        </picture>
+
+                        <figcaption class="cust_card-text">
+                          <h3 class="card_heading">
+
+                          </h3>
+
+                          <p class="card_para">
+
+                          </p>
+
+                          <hr>
+
+                          <div class="card_list">
+                            <ul class="custom_list">
+                              <li><a href="#" class="card_list-item">abc2</a></li>
+                              <li><a href="#" class="card_list-item">abc2</a></li>
+                              <li><a href="#" class="card_list-item">abc2</a></li>
+                            </ul>
+                          </div><!-- /.card_list -->
+                        </figcaption>
+
+                      </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <figure class="custome_card">
+                        <picture class="cust_card-img">
+
+                        </picture>
+
+                        <figcaption class="cust_card-text">
+                          <h3 class="card_heading">
+
+                          </h3>
+
+                          <p class="card_para">
+
+                          </p>
+
+                          <hr>
+
+                          <div class="card_list">
+                            <ul class="custom_list">
+                              <li><a href="#" class="card_list-item">abc3</a></li>
+                              <li><a href="#" class="card_list-item">abc3</a></li>
+                              <li><a href="#" class="card_list-item">abc3</a></li>
+                            </ul>
+                          </div><!-- /.card_list -->
+                        </figcaption>
+
+                      </figure>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+
+            </div><!-- /.swiper_sec-wrapper -->
+
+
+          </div><!-- /.container -->
+
+        </section><!-- /.our_classes -->
+
+        
 
         </main>
 
@@ -617,9 +792,11 @@
 
 
 
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
       <script src="js/bootstrap.bundle.js"></script>
       <script src="js/jquery.js"></script>
+      
+      
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.1.1/shuffle.js"></script> -->
       <script src="js/main.js"></script>
     </body>

@@ -1,3 +1,21 @@
+//styling of swiper section
+
+var slider1 = new Swiper ('.slider1', {
+  effect: 'slide',
+  
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 
 
@@ -55,4 +73,10 @@ video.addEventListener("playing", function () {
 video.addEventListener("pause", function () {
 	circlePlayButton.style.opacity = 1;
 });
+
+
+
+
+
+
 

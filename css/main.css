@@ -8939,6 +8939,13 @@ ul {
   align-items: center;
 }
 
+.custom_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .m-b-p2em {
   margin-bottom: 0.2em;
 }
@@ -8991,6 +8998,30 @@ ul {
   max-width: 90rem;
 }
 
+.md {
+  max-width: 80rem;
+}
+
+.custome_card .cust_card-img {
+  display: block;
+  padding-top: 25%;
+  width: 100%;
+  background-color: green;
+}
+.custome_card .cust_card-text {
+  padding: 1rem 0;
+}
+.custome_card hr {
+  color: #878786;
+}
+.custome_card .card_list {
+  padding: 0.5rem 0;
+}
+.custome_card .card_list .card_list-item {
+  text-decoration: none;
+  text-align: center;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -9040,7 +9071,8 @@ body {
   text-align: center;
   position: relative;
 }
-.sec_heading h1, .sec_heading h2 {
+.sec_heading h1,
+.sec_heading h2 {
   display: inline-block;
   line-height: calc(1.3rem + 2vw);
   font-weight: 700;
@@ -9048,7 +9080,8 @@ body {
   color: #271344;
   margin-bottom: 0.6rem;
 }
-.sec_heading h1 small, .sec_heading h2 small {
+.sec_heading h1 small,
+.sec_heading h2 small {
   font-size: 80%;
   font-family: "Butterfly Kids", sans-serif;
   display: block;
@@ -9438,7 +9471,7 @@ body {
 }
 
 .vision_img-a {
-  top: 10em;
+  top: 10;
   left: 30%;
   border: 0.7rem solid #eaeaea;
   border-radius: 0.5rem;
@@ -9447,7 +9480,7 @@ body {
 }
 
 .vision_img-b {
-  top: 20em;
+  top: 35%;
   left: 30%;
   border-radius: 0.5rem;
   border: 0.7rem solid #eaeaea;
@@ -9457,7 +9490,7 @@ body {
 
 .vision_img-c {
   position: absolute;
-  top: 15em;
+  top: 15%;
   left: 30em;
   width: 4em;
   animation: anim_c 4s linear infinite;
@@ -9465,7 +9498,7 @@ body {
 
 .vision_img-d {
   position: absolute;
-  top: 15em;
+  top: 25%;
   left: 10em;
   width: 6em;
   animation: anim_c 4s linear infinite;
@@ -9473,7 +9506,7 @@ body {
 
 .vision_img-e {
   position: absolute;
-  top: 3em;
+  top: 3%;
   left: 7em;
   width: 5em;
   animation: anim_c 4s linear infinite;
@@ -9481,7 +9514,7 @@ body {
 
 .vision_img-f {
   position: absolute;
-  top: 30em;
+  top: 35%;
   left: 20em;
   width: 4em;
   animation: anim_c 4s linear infinite;
@@ -9489,7 +9522,7 @@ body {
 
 .vision_img-g {
   position: absolute;
-  top: 30em;
+  top: 40%;
   left: 31em;
   width: 6em;
   animation: anim_c 4s linear infinite;
@@ -9605,11 +9638,13 @@ body {
 
 .our_programes .our_programes-row [class^=col-] {
   padding: 0;
+  min-height: 100%;
+  background-color: green;
 }
 
 .programes_text-sec {
   background-color: #271344;
-  padding: 2rem 0;
+  padding: 6rem 0;
 }
 
 .prog_container {
@@ -9619,25 +9654,57 @@ body {
 .prog_container .sec_heading {
   text-align: left;
 }
-.prog_container .sec_heading h2, .prog_container .sec_heading p {
+.prog_container .sec_heading h2,
+.prog_container .sec_heading p {
   color: #ffffff;
 }
+.prog_container .sec_heading h2 {
+  font-size: 4em;
+  line-height: 1.3em;
+}
+.prog_container .sec_heading h2 small {
+  font-size: 80%;
+}
 .prog_container .sec_heading p {
-  padding-bottom: 2em;
+  padding-bottom: 5em;
 }
 .prog_container .sec_heading .heading_img {
-  top: 0.5em;
-  width: 2em;
+  top: 1em;
+  width: 4em;
 }
 
 .video_section {
-  height: 24.1rem;
+  height: 100%;
+  position: relative;
 }
 
 .video-container {
   width: 100%;
-  height: 80%;
+  height: 100%;
   position: relative;
+}
+
+.modal_btn {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.modal_btn .modal_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal_btn .play-video_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10em;
+  z-index: 2;
 }
 
 iframe {
@@ -9650,32 +9717,8 @@ iframe {
      object-fit: cover;
 }
 
-.play-button-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-}
-.play-button-wrapper #circle-play-b {
-  cursor: pointer;
-  pointer-events: auto;
-}
-.play-button-wrapper #circle-play-b svg {
-  width: 100px;
-  height: 100px;
-  fill: #fff;
-  stroke: #fff;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  opacity: 0.9;
+.modal-dialog {
+  max-width: 100%;
 }
 
 .our_programes .video_section-row [class^=col-] {
@@ -9684,10 +9727,21 @@ iframe {
 }
 
 .video_section-row {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin: 0;
-  height: 25%;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF4981;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 .video_section-row h2 {
+  margin-left: 0.5rem;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2em;
@@ -9700,6 +9754,11 @@ iframe {
 .video_section-row h2 span {
   font-size: 0.6em;
   text-transform: uppercase;
+}
+.video_section-row .btn_theme {
+  background-color: white;
+  margin-right: 1rem;
+  color: #271344;
 }
 
 .video_sec-heading {
@@ -9715,6 +9774,17 @@ iframe {
 .video_sec-btn a {
   background-color: #ffffff;
   color: #271344;
+}
+
+.our_classes .card_list-item {
+  color: #FF4981;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+.our_classes .card_list-item small {
+  display: block;
+  color: #271344;
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -9769,6 +9839,9 @@ iframe {
       transform: translateX(20%);
     }
   }
+  .vision_img-sec {
+    height: calc(60vh - 20vw);
+  }
   .video-container {
     height: 25em;
   }
@@ -9789,6 +9862,9 @@ iframe {
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+  }
+  .vision_img-sec {
+    height: calc(60vh - 10vw);
   }
 }
 @media (max-width: 576px) {
@@ -9838,12 +9914,13 @@ iframe {
     display: none;
   }
   .vision_img-sec {
-    height: 62vh;
+    height: calc(90vh - 5vw);
   }
-  .vision_img-a {
-    top: -2rem;
-  }
-  .vision_img-a, .vision_img-b, .vision_img-c, .vision_img-g, .vision_img-e {
+  .vision_img-a,
+  .vision_img-b,
+  .vision_img-c,
+  .vision_img-g,
+  .vision_img-e {
     left: 2em;
   }
   .vision_img-c {
