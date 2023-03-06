@@ -71,6 +71,12 @@ const slider2 = new Swiper('#slider2', {
   // scrollbar: {
   //   el: '.swiper-scrollbar',
   // },
+
+  autoplay: 
+    {
+      delay: 2000,
+    },
+    loop: true,
 });
 
 
