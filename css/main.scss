@@ -167,7 +167,6 @@ ul {
     display: block;
     padding-top: 65%;
     width: 100%;
-    background-color: green;
     position: relative;
 
     img {
@@ -278,15 +277,14 @@ body {
     font-size: calc(.6rem + .5vw);
     color: #919191;
 
-    padding-bottom: 5rem;
+    padding-bottom: 6.5rem;
   }
 
 
   .heading_img {
     position: absolute;
-    bottom: 0;
+    top: 7.5rem;
     left: 45%;
-    transform: translateX(-50%);
     width: 5em;
     animation: heading_anin 1.5s linear infinite;
 
@@ -387,7 +385,6 @@ body {
   border-radius: 50%;
   text-decoration: none;
   display: inline-block;
-  background-color: green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,6 +476,7 @@ body {
     width: 100%;
     height: 2rem;
     bottom: 0;
+    transform: translateY(2px);
     left: 0;
     z-index: 5;
 
@@ -718,7 +716,7 @@ $custom_width: calc(100% - 45rem);
 }
 
 .vision_img-sec {
-  height: 80vh;
+  height: 35rem;
   width: 100%;
   position: relative;
 
@@ -1392,6 +1390,45 @@ iframe {
 }
 
 
+//styling of our_staff section
+
+.our_staff{
+
+  .custome_card{
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 12%), 0 -6px 12px rgb(0 0 0 / 24%);
+    transition: all .3s ease-in-out;
+    margin: .5rem;
+    &:hover{
+      transform: translate3d(0, -0.5rem, 0);
+      box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    }
+  }
+  .cust_card-text{
+    text-align: center;
+    
+  }
+
+  .card_heading{
+    color: $d-blue;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    small{
+      display: block;
+      font-size: 50%;
+      font-weight: normal;
+    }
+  }
+
+ 
+  
+}
+
+
 body {
   line-height: 1.5;
 }
@@ -1474,9 +1511,7 @@ body {
   //styling of vision_text-outer
 
 
-  .vision_img-sec {
-    height: calc(60vh - 20vw);
-  }
+  
 
 
   //styling of our_programes
@@ -1516,9 +1551,7 @@ body {
   //styling of vision
 
 
-  .vision_img-sec {
-    height: calc(60vh - 10vw);
-  }
+  
 
 
 }
@@ -1591,9 +1624,7 @@ body {
 
   //styling of vision section
 
-  .vision_img-sec {
-    height: calc(90vh - 5vw);
-  }
+  
 
 
 
