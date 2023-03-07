@@ -1,26 +1,6 @@
 // styling of swiper section
 
 
-// const swiper = new swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-
-// });
-
 
 const slider1 = new Swiper('#slider1', {
   effect: 'slide',
@@ -63,14 +43,6 @@ const slider2 = new Swiper('#slider2', {
       el: '.swiper-pagination',
   },
 
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 
   autoplay: 
     {
@@ -101,40 +73,9 @@ const slider2 = new Swiper('#slider2', {
 // });
 
 
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 150) {
-      $('#dynamic').addClass('newClass');
-  } else {
-      $('#dynamic').removeClass('newClass');
-  }
-});
 
 
-//shuffle function
 
-window.onload = function () {
-
-}
-
-
-//    const video = document.getElementById("video");
-// const circlePlayButton = document.getElementById("circle-play-b");
-
-// function togglePlay() {
-// 	if (video.paused || video.ended) {
-// 		video.play();
-// 	} else {
-// 		video.pause();
-// 	}
-// }
-
-// circlePlayButton.addEventListener("click", togglePlay);
-// video.addEventListener("playing", function () {
-// 	circlePlayButton.style.opacity = 0;
-// });
-// video.addEventListener("pause", function () {
-// 	circlePlayButton.style.opacity = 1;
-// });
 
 
 var counted = 0;

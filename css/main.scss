@@ -283,7 +283,7 @@ body {
 
   .heading_img {
     position: absolute;
-    top: 7.5rem;
+    top: 9.5rem;
     left: 45%;
     width: 5em;
     animation: heading_anin 1.5s linear infinite;
@@ -357,29 +357,29 @@ body {
 }
 
 
-.nav_top-right {
+.media_list {
   margin-top: 0 !important;
   justify-content: flex-end;
 
-  li:nth-child(1) .nav_right-item {
+  li:nth-child(1) .media_item {
     background: $blue;
   }
 
-  li:nth-child(2) .nav_right-item {
+  li:nth-child(2) .media_item {
     background: $d-pink;
   }
 
-  li:nth-child(3) .nav_right-item {
+  li:nth-child(3) .media_item {
     background: $color-yellow;
   }
 
-  li:nth-child(4) .nav_right-item {
+  li:nth-child(4) .media_item {
     background: $color-green;
   }
 }
 
 
-.nav_right-item {
+.media_item {
   width: calc(1.5rem + 1vw);
   height: calc(1.5rem + 1vw);
   border-radius: 50%;
@@ -866,6 +866,9 @@ $custom_width: calc(100% - 45rem);
 
 .activities {
   position: relative;
+  .row{
+    margin-top: 1rem;
+  }
 }
 
 .act_bg {
@@ -1424,8 +1427,80 @@ iframe {
     }
   }
 
- 
+ .media_list{
+  justify-content: center;
+ }
   
+}
+
+//styling of footer section
+
+.footer_wrap{
+  background-color: $d-blue;
+
+
+  .btn{
+    color: $white;
+    margin-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+  p{
+    color: $white;
+    margin-bottom: 1rem;
+  }
+
+  .media_list{
+    justify-content: left;
+    margin-bottom: 1rem;
+  }
+
+  .footer_sec{
+    
+    b{
+      color: $white;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+
+    .footer_sec-list{
+      list-style: none;
+      .footer_list-item{
+        display: inline-block;
+        padding: .5rem;
+        text-decoration: none;
+        color: $white;
+
+        &:hover{
+          color: $white;
+          
+        }
+        i{
+          color: $color-yellow;
+          font-size: .8rem;
+          margin-right: .5rem;
+        }
+      }
+    }
+
+    .sec_three{
+      [class^="icon-"]{
+        font-family: 'icomoon' !important;
+      }
+      .footer_list-item{
+        // font-family: 'icomoon';
+        position: relative;
+        &:before{
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "\ea56";
+          color: $white;
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 
@@ -1460,7 +1535,7 @@ body {
   }
 
 
-  .nav_top-right {
+  .media_list {
     margin-top: .5rem;
   }
 
