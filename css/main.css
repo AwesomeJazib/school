@@ -8940,6 +8940,13 @@ ul {
   align-items: center;
 }
 
+.cont_space-betw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .custom_list {
   list-style: none;
   display: flex;
@@ -10031,9 +10038,51 @@ iframe {
   margin-bottom: 2.5rem;
 }
 
-.footer_wrap {
-  background-color: #271344;
+.gallery .custon_sec {
+  background-color: #ACCC4F;
+  padding: 2rem 0;
 }
+.gallery .custon_sec h2 {
+  font-size: calc(1.7rem + 0.5vw);
+  font-weight: bold;
+  color: #ffffff;
+}
+.gallery .custon_sec h2 small {
+  font-weight: normal;
+  font-size: 50%;
+  display: block;
+}
+
+.btn_enroll {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  color: #000000;
+}
+
+.footer_wrap {
+  background-color: #361C5B;
+  position: relative;
+  padding-top: 15rem;
+}
+.footer_wrap .footer_img {
+  position: absolute;
+  width: 10rem;
+  top: 0;
+  left: 50%;
+  animation: footer_anim 10s linear infinite;
+}
+@keyframes footer_anim {
+  0% {
+    transform: translateY(20%) rotate(30deg);
+  }
+  50% {
+    transform: translateY(30%) rotate(-30deg);
+  }
+  100% {
+    transform: translateY(20%) rotate(30deg);
+  }
+}
+
 .footer_wrap .btn {
   color: #ffffff;
   margin-bottom: 1rem;
@@ -10091,6 +10140,40 @@ iframe {
 }
 .footer_wrap .form_row .btn_theme {
   width: 100%;
+}
+
+.custon_sec {
+  background-color: #271344;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+.custon_sec p {
+  font-size: calc(0.3rem + 0.5vw);
+  margin-bottom: 0;
+}
+.custon_sec ul {
+  list-style: none;
+  gap: 0.25rem;
+}
+.custon_sec ul li {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: calc(0.3rem + 0.5vw);
+}
+.custon_sec ul li i {
+  color: #ffffff;
+  margin-right: 0.25rem;
+  font-size: 0.5rem;
+}
+.custon_sec ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.custon_sec ul li a:hover {
+  text-decoration: underline;
+  color: #FDC100;
 }
 
 .imglist {
@@ -10187,6 +10270,13 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+  }
+  .gallery .cont_space-betw {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .gallery .cont_space-betw .btn_enroll {
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 576px) {

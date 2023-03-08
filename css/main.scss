@@ -19,6 +19,7 @@ $font_family-b: 'Butterfly Kids', sans-serif;
 $white: #ffffff;
 $black: #000000;
 $d-blue: #271344;
+$dul_blue: #361C5B;
 $blue: #1AB9FD;
 $color-orange: #FCC000;
 $color-crimson: #FD6766;
@@ -97,6 +98,13 @@ ul {
   align-items: center;
 }
 
+.cont_space-betw{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .custom_list {
   list-style: none;
   display: flex;
@@ -104,6 +112,8 @@ ul {
   align-items: center;
 
 }
+
+
 
 .m-b-p2em {
   margin-bottom: .2em;
@@ -161,6 +171,8 @@ ul {
 .md {
   max-width: 80rem;
 }
+
+
 
 .custome_card {
   .cust_card-img {
@@ -1441,10 +1453,63 @@ iframe {
     margin-bottom: 2.5rem;
   } 
 }
+
+.gallery .custon_sec{
+  background-color: $color-green;
+  padding: 2rem 0;
+
+  h2{
+    font-size: calc(1.7rem + .5vw);
+    font-weight: bold;
+    color: $white;
+    small{
+      font-weight: normal;
+      font-size: 50%;
+      display: block;
+    }
+  }
+}
+
+.btn_enroll{
+  background-color: $white;
+  border-radius: .5rem;
+  color: $black;
+}
 //styling of footer section
 
 .footer_wrap{
-  background-color: $d-blue;
+  background-color: $dul_blue;
+  position: relative;
+  padding-top: 15rem;
+
+  .footer_img{
+    position: absolute;
+    width:10rem;
+    top: 0;
+    left: 50%;
+    animation: footer_anim 10s linear infinite;
+
+    @keyframes footer_anim  {
+      0% {
+        transform: translateY(20%) rotate(30deg);
+
+      }
+
+      50% {
+        transform: translateY(30%) rotate(-30deg);
+      }
+
+      100% {
+
+        transform: translateY(20%) rotate(30deg);
+
+      }
+    }
+  }
+}
+
+.footer_wrap{
+  
 
 
   .btn{
@@ -1523,6 +1588,53 @@ iframe {
 
     .btn_theme{
       width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.custon_sec{
+  background-color: $d-blue;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+
+  p{
+    font-size: calc(.3rem + .5vw);
+    margin-bottom: 0;
+  }
+
+  
+  ul{
+    list-style: none;gap: .25rem;
+    li{
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-size: calc(.3rem + .5vw);
+      
+      i{
+        color: $white;
+        margin-right: .25rem;
+        font-size: .5rem;
+      }
+
+      a{
+        color: $white;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        &:hover{
+          text-decoration: underline;
+          color: $color-yellow;
+          
+        }
+
+      }
     }
   }
 }
@@ -1678,7 +1790,15 @@ body {
     gap: 1em;
   }
 
-  //styling of vision
+  //styling of gallery section
+
+  .gallery .cont_space-betw{
+    flex-direction: column;
+    justify-content: center;
+    .btn_enroll{
+      margin-top: 1.5rem;
+    }
+  }
 
 
   
